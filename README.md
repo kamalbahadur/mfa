@@ -1,4 +1,4 @@
-This project demonstrates how to 2FA (2 Factor Authentication) is done using Google Authenticator.
+This project demonstrates how the 2FA (2 Factor Authentication) is done using Google Authenticator.
 
 # Requirement
 Depends on Postgres to save the user details and shared secret. The shared secret is not encrypted for simplicity. In production environment, this value should be encrypted.
