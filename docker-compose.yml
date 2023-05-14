@@ -1,0 +1,15 @@
+version: "3"
+services:
+  postgres_mfa:
+    image: postgres:14-alpine
+    volumes:
+      - mfa-pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=mfa_demo
+      - POSTGRES_USER=mfa_admin_user
+      - POSTGRES_PASSWORD=mfa_admin_pass
+    ports:
+      - 5532:5432
+
+volumes:
+  mfa-pgdata:
