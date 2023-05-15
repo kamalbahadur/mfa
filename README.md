@@ -12,6 +12,7 @@ Start the app using the following command from the root dir:
 >go run main.go
 
 When the app is started, DB migration takes care of creating necessary tables and inserting a test user with id as **1**. 
+Note: when the app is restarted, the user is recreated losing the shared secret. This is just side effect of not-so-great database migration code. If you can make it better, send me a pull request.   
 
 ### Signup for 2FA
 Signup endpoint is called to sign-up for the 2FA. This will generate and save the shared secret into the database. 
